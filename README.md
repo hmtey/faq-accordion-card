@@ -60,7 +60,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-CSS ```linar-gradient()```
+CSS ```linar-gradient()```, ```filters```
 
 To see how you can add code snippets, see below:
 

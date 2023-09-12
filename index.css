@@ -12,13 +12,24 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+img {
+    width: 65%;
+    z-index: 2;
+    position: fixed;
+    top: 4%;
+    filter: drop-shadow(0 2rem 0 hsl(0, 0%, 0%, 0.1));
+}
+
 .card {
     height: 60%;
     width: 90%;
+    z-index: 1;
+    position: fixed;
     border-radius: 20px;
-    box-shadow: 0rem 2rem 2em hsl(0, 0%, 0%, 0.3);
+    box-shadow: 0rem 2rem 2rem hsl(0, 0%, 0%, 0.3);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
     background-color: white;
 }
 
