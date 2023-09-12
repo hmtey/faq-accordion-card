@@ -12,25 +12,25 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-img {
-    width: 65%;
+picture {
     z-index: 2;
     position: fixed;
-    top: 4%;
-    filter: drop-shadow(0 2rem 0 hsl(0, 0%, 0%, 0.1));
 }
 
 .card {
-    height: 60%;
-    width: 90%;
+    height: 80%;
+    width: 65%;
     z-index: 1;
     position: fixed;
     border-radius: 20px;
     box-shadow: 0rem 2rem 2rem hsl(0, 0%, 0%, 0.3);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
+    background-image: url('./images/bg-pattern-desktop.svg');
     background-color: white;
+    background-repeat: no-repeat;
+    background-position: -50vw center;
 }
 
 .attribution {
@@ -39,4 +39,20 @@ img {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 480px) {
+    picture {
+        width: 65%;
+        top: 4%;
+    }
+
+    .card {
+        height: 60%;
+        width: 90%;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url('./images/bg-pattern-mobile.svg');
+        background-position: top center;
+    }
 }
