@@ -12,9 +12,11 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-picture {
+.floating-illustration {
     z-index: 2;
-    position: fixed;
+    position: absolute;
+    top: 40%;
+    left: -120px;
 }
 
 .card {
@@ -27,10 +29,11 @@ picture {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-image: url('./images/bg-pattern-desktop.svg');
+    background-origin: inherit;
+    background-image: url('./images/bg-pattern-desktop.svg'), url('./images/illustration-woman-online-desktop.svg');
     background-color: white;
     background-repeat: no-repeat;
-    background-position: -50vw center;
+    background-position: -600px center, -100px center;
 }
 
 .attribution {
@@ -41,10 +44,11 @@ picture {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 480px) {
-    picture {
-        width: 65%;
-        top: 4%;
+@media screen and (max-width: 1024px) {
+    .floating-illustration {
+        width: 70%;
+        top: -25%;
+        left: 15%;
     }
 
     .card {
